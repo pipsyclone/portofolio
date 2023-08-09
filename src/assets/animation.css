@@ -1,0 +1,126 @@
+:root {
+    --delay-100ms: 100ms; 
+    --delay-200ms: 200ms; 
+    --delay-300ms: 300ms; 
+    --delay-400ms: 400ms; 
+    --delay-500ms: 500ms;
+    --delay-600ms: 600ms;
+    --delay-700ms: 700ms;
+    --delay-800ms: 800ms;
+    --delay-900ms: 900ms;
+    --delay-1000ms: 1000ms;
+}
+
+/* Fade In Down */
+.fadeInDown {
+    opacity: 0;
+    animation: fadeInDown 1s ease-in both;
+}
+
+.fadeInDown.delay-100ms {
+    animation-delay: var(--delay-100ms);
+}
+
+.fadeInDown.delay-200ms {
+    animation-delay: var(--delay-200ms);
+}
+
+.fadeInDown.delay-300ms {
+    animation-delay: var(--delay-300ms);
+}
+
+.fadeInDown.delay-400ms {
+    animation-delay: var(--delay-400ms);
+}
+
+.fadeInDown.delay-500ms {
+    animation-delay: var(--delay-500ms);
+}
+
+.fadeInDown.delay-600ms {
+    animation-delay: var(--delay-600ms);
+}
+
+.fadeInDown.delay-700ms {
+    animation-delay: var(--delay-700ms);
+}
+
+.fadeInDown.delay-800ms {
+    animation-delay: var(--delay-800ms);
+}
+
+.fadeInDown.delay-900ms {
+    animation-delay: var(--delay-900ms);
+}
+
+.fadeInDown.delay-1000ms {
+    animation-delay: var(--delay-1000ms);
+}
+
+@keyframes fadeInDown{
+    from {
+        transform: translate3d(0, -40%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+/* Fade In Up */
+.fadeInUp {
+    opacity: 0;
+    animation: fadeInUp 1s ease-in both;
+}
+
+.fadeInUp.delay-100ms {
+    animation-delay: var(--delay-100ms);
+}
+
+.fadeInUp.delay-200ms {
+    animation-delay: var(--delay-200ms);
+}
+
+.fadeInUp.delay-300ms {
+    animation-delay: var(--delay-300ms);
+}
+
+.fadeInUp.delay-400ms {
+    animation-delay: var(--delay-400ms);
+}
+
+.fadeInUp.delay-500ms {
+    animation-delay: var(--delay-500ms);
+}
+
+.fadeInUp.delay-600ms {
+    animation-delay: var(--delay-600ms);
+}
+
+.fadeInUp.delay-700ms {
+    animation-delay: var(--delay-700ms);
+}
+
+.fadeInUp.delay-800ms {
+    animation-delay: var(--delay-800ms);
+}
+
+.fadeInUp.delay-900ms {
+    animation-delay: var(--delay-900ms);
+}
+
+.fadeInUp.delay-1000ms {
+    animation-delay: var(--delay-1000ms);
+}
+
+@keyframes fadeInUp{
+    from {
+        transform: translate3d(0, 20%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}

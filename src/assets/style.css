@@ -1,0 +1,414 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,sans-serif;
+    --color-navy: #0a192f;
+    --color-light-navy: #233554;
+    --color-green: #64ffda;
+    --color-gray: #a8b2d1;
+    --color-dark-gray: darkgrey;
+}
+
+/* Others */
+
+/* Navbar */
+.navbar-bg-blur {
+    background: rgba(10, 25, 47, 0.5);
+    backdrop-filter: blur(5px);
+    border: 0px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    width: fit-content;
+}
+
+.navbar {
+    margin: auto;
+    margin-top: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    z-index: 99999999;
+}
+
+.navmenu {
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.navlink {
+    text-decoration: none;
+    color: var(--color-gray);
+    font-family: var(--font-mono);
+    font-size: 12pt;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.navlink::after {
+    width: 0%;
+    content: '';
+    display: block;
+    height: 2px;
+    background: var(--color-green);
+    transition: width .3s ease-in-out;
+}
+
+.navlink:hover::after {
+    width: 100%;
+}
+
+.navlinkcv {
+    text-decoration: none;
+    color: var(--color-green);
+    font-family: var(--font-mono);
+    font-size: 12pt;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Button Custom */
+.btnporto {
+    background-color: #0a192f;
+    font-family: var(--font-mono);
+    font-size: 12pt;
+    color: var(--color-green);
+    border: 2px solid var(--color-green);
+    border-radius: 10px;
+    padding: 10px;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
+
+.btnporto:hover {
+    box-shadow: 10px 10px 0px var(--color-green);
+    transform: translate(-10px, -10px);
+}
+
+/* Sections */
+section {
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+    padding: 30px;
+}
+
+.section-title {
+    font-family: var(--font-mono);
+    font-size: 20pt;
+    color: var(--color-gray);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: fit-content;
+    border-bottom: 5px solid var(--color-green);
+}
+
+/* Hero */
+.mynameis {
+    font-family: var(--font-mono);
+    font-size: 15pt;
+    color: var(--color-green);
+}
+
+.name {
+    font-family: var(--font-mono);
+    font-size: 50pt;
+    font-weight: bold;
+    color: var(--color-gray);
+}
+
+.createeverything {
+    font-family: var(--font-mono);
+    font-size: 30pt;
+    font-weight: bold;
+    color: var(--color-gray);
+}
+
+.littleparagraf {
+    font-family: var(--font-sans);
+    font-size: 13pt;
+    color: var(--color-dark-gray);
+    width: 80%;
+    margin-top: 30px;
+}
+
+/* Sosmed */
+.sosmed-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 7%;
+    bottom: -20%;
+    z-index: 99999999;
+}
+
+.sosmed-item {
+    font-size: 15pt;
+    text-decoration: none;
+    color: var(--color-gray);
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.sosmed-item:hover {
+    color: var(--color-green);
+}
+
+.email-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 7%;
+    bottom: -20%;
+    z-index: 99999999;
+    margin: auto;
+}
+
+.email-item {
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    color: var(--color-gray);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    text-align: center;
+}
+
+.email-item:hover {
+    color: var(--color-green);
+}
+
+.vertical-rule {
+    background-color: var(--color-gray);
+    border: 0px;
+    width: 1px;
+    height: 200px;
+    margin: auto;
+}
+
+/* About */
+.about-wrapper {
+    display: flex;
+    gap: 100px;
+}
+
+.about-text {
+    font-family: var(--font-mono);
+    font-size: 15pt;
+    color: var(--color-gray);
+}
+
+.about-skills {
+    margin-right: 30px;
+}
+
+.about-foto {
+    background: linear-gradient(
+                rgba(100, 255, 216, .5),
+                rgba(100, 255, 216, .5)
+                ),
+                url('./img/myfoto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 3000px;
+    height: 300px;
+    border: 1px solid var(--color-green);
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.about-foto:hover {
+    background: linear-gradient(
+                rgba(100, 255, 216, 0),
+                rgba(100, 255, 216, 0)
+                ),
+                url('./img/myfoto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0px var(--color-green);
+}
+
+/* Project */
+.project-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    width: 100%;
+}
+
+.project-card {
+    background-color: var(--color-light-navy);
+    padding: 15px;
+    font-family: var(--font-mono);
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--color-dark-gray);
+    font-size: 11pt;
+    transition: .3s ease-in-out;
+    width: 100%;
+}
+
+.project-card:hover {
+    transform: translate3d(0, -3%, 0);
+}
+
+.project-icon {
+    display: flex;
+}
+
+.project-icon-folder {
+    font-size: 25pt;
+    color: var(--color-green);
+}
+
+.project-icon-others {
+    font-size: 20pt;
+}
+
+.project-icon-github, .project-icon-link {
+    color: var(--color-gray);
+    transition: .3s ease-in-out;
+}
+
+.project-icon-github:hover, .project-icon-link:hover {
+    color: var(--color-green);
+}
+
+.project-title {
+    font-family: var(--font-mono);
+    font-size: 15pt;
+    font-weight: bold;
+    color: var(--color-gray);
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.project-technologies {
+    margin-top: 30px;
+    font-size: 9pt;
+}
+
+/* Contact */
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-title {
+    font-family: var(--font-mono);
+    font-size: 30pt;
+    font-weight: bold;
+    color: var(--color-gray);
+    margin-bottom: 50px;
+}
+
+.contact-text {
+    font-family: var(--font-mono);
+    font-size: 13pt;
+    color: var(--color-dark-gray);
+    margin-bottom: 50px;
+    width: 60%;
+    margin: auto;
+}
+
+/* Footer */
+.footer {
+    font-family: var(--font-mono);
+    font-size: 11pt;
+    text-align: center;
+    color: var(--color-gray);
+    margin-top: 50px;
+}
+
+/* Style Responsive */
+@media screen and (max-width: 850px) {
+    .navbar {
+        margin-top: 30px;
+    }
+
+    .navmenu {
+        gap: 10px;
+    }
+
+    .navlink {
+        font-size: 11pt;
+    }
+
+    section {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    /* Hero */
+    .mynameis {
+        font-size: 12pt;
+    }
+
+    .name {
+        margin-top: 100px;
+        font-size: 20pt;
+    }
+
+    .createeverything {
+        font-size: 15pt;
+    }
+
+    .littleparagraf {
+        font-size: 11pt;
+        text-align: justify;
+        width: 100%;
+    }
+
+    /* Sosmed */
+    .sosmed-wrapper {
+        display: none;
+    }
+
+    .email-wrapper {
+        display: none;
+    }
+
+    /* About */
+    .about-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .about-text {
+        text-align: justify;
+        font-size: 11pt;
+    }
+
+    .about-foto {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    /* Project */
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    /* Contact */
+    .contact-text {
+        width: 100%;
+    }
+
+    /* footer */
+    .footer {
+        margin-top: 5px;
+    }
+}
