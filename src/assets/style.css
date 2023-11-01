@@ -298,6 +298,14 @@ section {
     font-size: 9pt;
 }
 
+.project-zero {
+    text-align: center;
+    font-size: 17pt;
+    font-family: var(--font-mono);
+    color: var(--color-gray);
+    margin-top: 100px;
+}
+
 /* Contact */
 .contact-wrapper {
     display: flex;
@@ -399,7 +407,7 @@ section {
     /* Project */
     .project-wrapper {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
     }
 
     /* Contact */
